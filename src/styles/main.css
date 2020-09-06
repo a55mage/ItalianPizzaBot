@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'text';
+    src: url("./fonts/Please\ write\ me\ a\ song.ttf") format('truetype');
+ }
+ 
+ @font-face {
+    font-family: 'title';
+    src: url("./fonts/Wildy-Sans.ttf") format('truetype');
+ }
