@@ -90,7 +90,7 @@
                     </v-col>
                     <v-col class="pa-12 unclickable" style="position:relative" cols="12" md="8" lg="8" xl="8">
 
-                        <canvas ref="can" width="700px" height="500px">
+                        <canvas ref="can" width="500px" height="500px">
                         </canvas>
 
                     </v-col>
@@ -117,7 +117,7 @@
                 warning: false,
                 base: ['pomodoro_e_mozzarella', 'bianca', 'rossa', 'bianca_bufala', 'pomodoro_e_bufala'],
                 listaVerdure: ['cipolle', 'peperoni', 'melanzane', 'zucchine', 'carciofi', 'olive', 'funghi_champignon', 'patate_arrosto', 'patate_fritte',
-                    'pomodoro_fresco', 'pesto', 'rucola', 'basilico'],
+                    'pomodorini', 'pesto', 'rucola', 'basilico'],
                 listaFrutta: ['ananas', 'pere'],
                 listaLatticini: ['gorgonzola', 'ricotta', 'provola', 'pecorino', 'grana', 'panna'],
                 listaCarni: ['cavallo', 'wurstel', 'pancetta', 'speck', 'salame', 'salsiccia_fresca', 'guanciale', 'prosciutto_cotto',
@@ -209,7 +209,7 @@
 
                         base.onload = function (img) {
                             img = new fabric.Image(base, {
-                                left: 120,
+                                left: 0,
                                 top: 0,
                                 scaleX: 0.50,
                                 scaleY: 0.50,
@@ -230,7 +230,7 @@
 
                         base.onload = function (img) {
                             img = new fabric.Image(base, {
-                                left: 120,
+                                left: 0,
                                 top: 0,
                                 scaleX: 0.50,
                                 scaleY: 0.50,
