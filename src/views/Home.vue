@@ -78,21 +78,20 @@
                     <v-col cols="12" class="mb-12">
                         <h1 class="text-center titolo">la tua Pizza</h1>
                     </v-col>
-                    <v-col cols="12" md="4" lg="4" xl="4" class="mx-auto pa-4 pa-lg-12 textFont ingredients">
+                    <v-col cols="12" class="mx-auto pa-4 pa-lg-12 textFont ingredients">
                         <v-btn class="mb-6 text-center mx-auto textFont" height="50px"
                             color="#fee119" width="100%" style="border-radius:40px; font-weight:bold" tile
                             @click='saveJPEG()'>
                             Salva pizza
                         </v-btn>
-                        <p class="text-uppercase text-center" v-for="item in toppingList" :key="item">
-                            {{item | underSpace}}
-                        </p>
+                      <p v-if="basePizza" class="text-uppercase">Base: {{basePizza | underSpace}}</p>
+                        <span class="text-uppercase text-center" v-for="item in toppingList" :key="item">
+                            {{item | underSpace}} -
+                        </span>
                     </v-col>
-                    <v-col class="pa-12 unclickable" style="position:relative" cols="12" md="8" lg="8" xl="8">
-
-                        <canvas ref="can" width="500px" height="500px">
+                    <v-col class="pa-12 unclickable" style="position:relative" cols="12">
+                        <canvas ref="can" :width="canvasSize" height="500">
                         </canvas>
-
                     </v-col>
                 </v-row>
             </div>
@@ -124,10 +123,16 @@
                     'prosciutto_crudo', 'mortadella'],
                 listaPesci: ['tonno', 'salmone', 'gamberi', 'gamberetti', 'surimi', 'acciughe', 'cozze', 'calamari', 'vongole'],
                 listaPrioritaria:['pesto'],
-                toppingList: []
+                basePizza: null,
+                toppingList: [],
+                canvasRef: null,
+                canvasInstance: null
             }
         },
         computed: {
+            canvasSize () {
+              return window.innerWidth.toString() + 'px'
+            },
             foodHint() {
                 if (this.meat || this.fish || this.vegetables || this.latticini) {
                     return true
@@ -146,9 +151,6 @@
         },
         components: {},
         methods: {
-            onResize(event) {
-                console.log('window has been resized', event)
-            },
             toggleMeat() {
                 if (this.meat) {
                     this.meat = false
@@ -181,7 +183,6 @@
             },
 
             saveJPEG() {
-                console.log('export image');
                 //IT JUST WORKS
                 let canvas = this.$refs.can;
                 let multiplier = 1;
@@ -206,13 +207,12 @@
                         var base = new Image();
                         base.crossOrigin = "Anonymous";
                         base.src = require("../../public/assets/toppings/"+topping+".png");
-
                         base.onload = function (img) {
                             img = new fabric.Image(base, {
                                 left: 0,
                                 top: 0,
-                                scaleX: 0.50,
-                                scaleY: 0.50,
+                                scaleX: window.innerWidth > 576 ? 0.50 : 0.25,
+                                scaleY: window.innerWidth > 576 ? 0.50 : 0.25,
                                 selectable: false,
                                 eventable: false,
                                 src: base.src,
@@ -232,8 +232,8 @@
                             img = new fabric.Image(base, {
                                 left: 0,
                                 top: 0,
-                                scaleX: 0.50,
-                                scaleY: 0.50,
+                                scaleX: window.innerWidth > 576 ? 0.50 : 0.25,
+                                scaleY: window.innerWidth > 576 ? 0.50 : 0.25,
                                 selectable: false,
                                 eventable: false,
                                 src: base.src,
@@ -246,16 +246,18 @@
             createPizza() {
                 if (this.vegetables || this.meat || this.fish || this.latticini) {
 
-                    const ref = this.$refs.can;
-                    const canvas = new fabric.Canvas(ref);
+                    if (!this.canvasRef && !this.canvasInstance) {
+                      this.canvasRef = this.$refs.can;
+                      this.canvasInstance = new fabric.Canvas(this.canvasRef);
+                    }
 
                     //GENERAZIONE BASE RANDOM
                     var randBase = Math.floor(Math.random() * this.base.length)
                     var basePizza = this.base[randBase];
-                    console.log(basePizza)
+                    this.basePizza = basePizza
 
                     //RENDER BASE PIZZA
-                    this.addImageBase(basePizza, canvas);
+                    this.addImageBase(basePizza, this.canvasInstance);
 
                     var listaCondimenti = []
                     var condimentiGenerati = []
@@ -289,13 +291,11 @@
                         if (this.listaPrioritaria.includes(condimentiGenerati[i]))
                         {
                             var toppingPrioritarioString = condimentiGenerati[i];
-                            this.addImageTopping(toppingPrioritarioString, canvas);
+                            this.addImageTopping(toppingPrioritarioString, this.canvasInstance);
                             console.log(toppingPrioritarioString)
                         }
                     }
                     console.log(condimentiGenerati)
-
-
 
                     var i = 0
                     //RENDER INGREDIENTI
@@ -303,7 +303,7 @@
                         if (!this.listaPrioritaria.includes(condimentiGenerati[i]))
                         {
                             var toppingString = condimentiGenerati[i];
-                            this.addImageTopping(toppingString, canvas);
+                            this.addImageTopping(toppingString, this.canvasInstance);
                             console.log(toppingString)
                         }
                     }
@@ -390,7 +390,7 @@
     .unclickable {
         background:url("../../public/assets/background.jpg");
         background-position: right;
-        background-size: 800px;
+        background-size: 100%;
         pointer-events: none
     }
 </style>
