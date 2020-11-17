@@ -7,3 +7,7 @@
     font-family: 'title';
     src: url("./fonts/Wildy-Sans.ttf") format('truetype');
  }
+
+.canvas-container { margin:0 auto ;
+
+}

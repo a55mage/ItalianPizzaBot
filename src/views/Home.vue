@@ -89,9 +89,10 @@
                             {{item | underSpace}} -
                         </span>
                     </v-col>
-                    <v-col class="pa-12 unclickable" style="position:relative" cols="12">
-                        <canvas ref="can" :width="canvasSize" height="500">
+                    <v-col class="pa-12 unclickable" cols="12">
+                        <canvas ref="can" width="500" height="500" style="margin: auto">
                         </canvas>
+
                     </v-col>
                 </v-row>
             </div>
@@ -331,6 +332,11 @@
         font-family: 'text', sans-serif;
         transition: 300ms;
     }
+
+    .canvas-container {
+      margin:0 auto ;
+    }
+
 
     #title {
         font-size: 52px;
