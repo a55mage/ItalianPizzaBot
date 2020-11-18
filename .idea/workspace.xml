@@ -1,7 +1,77 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="aeb6ee09-0e73-4afe-ba76-a27f6b4552ba" name="Default Changelist" comment="" />
+    <list default="true" id="aeb6ee09-0e73-4afe-ba76-a27f6b4552ba" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/public/assets/basi/pomodoro e mozzarella.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/toppings/cavallo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/toppings/gamberi.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/toppings/guanciale.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/toppings/olive_nere.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/toppings/panna.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/toppings/pecorino.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/toppings/salsiccia_fresca.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/basi/bianca.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/basi/bianca.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/basi/pomodoro_e_mozzarella.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/basi/rossa.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/basi/rossa.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/toppings/acciughe.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/toppings/acciughe.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/toppings/ananas.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/toppings/ananas.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/toppings/basilico.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/toppings/basilico.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/toppings/bufala.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/toppings/bufala.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/toppings/calamari.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/toppings/calamari.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/toppings/capperi.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/toppings/capperi.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/toppings/carciofi.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/toppings/carciofi.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/toppings/cipolle.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/toppings/cipolle.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/toppings/cozze.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/toppings/cozze.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/toppings/funghi_champignon.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/toppings/funghi_champignon.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/toppings/gamberetti.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/toppings/gamberetti.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/toppings/gorgonzola.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/toppings/gorgonzola.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/toppings/grana.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/toppings/grana.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/toppings/melanzane.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/toppings/melanzane.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/toppings/mortadella.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/toppings/mortadella.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/toppings/olive.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/toppings/olive_verdi.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/toppings/olive_verdi.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/toppings/pancetta.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/toppings/pancetta.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/toppings/patate_arrosto.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/toppings/patate_arrosto.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/toppings/patatine_fritte.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/toppings/patatine_fritte.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/toppings/peperoni.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/toppings/peperoni.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/toppings/pere.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/toppings/pere.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/toppings/pesto.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/toppings/pesto.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/toppings/pomodorini.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/toppings/pomodorini.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/toppings/prosciutto_cotto.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/toppings/prosciutto_cotto.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/toppings/prosciutto_crudo.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/toppings/prosciutto_crudo.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/toppings/provola.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/toppings/provola.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/toppings/ricotta.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/toppings/ricotta.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/toppings/rucola.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/toppings/rucola.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/toppings/salame.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/toppings/salame.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/toppings/salmone.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/toppings/salmone.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/toppings/speck.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/toppings/speck.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/toppings/surimi.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/toppings/surimi.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/toppings/tonno.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/toppings/tonno.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/toppings/vongole.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/toppings/vongole.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/toppings/wurstel.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/toppings/wurstel.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/toppings/zucchine.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/toppings/zucchine.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/Home.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/Home.vue" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -11,11 +81,15 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1kNlx3lif9hgNUu2qB0v7JPkwyA" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
@@ -27,6 +101,7 @@
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="restartRequiresConfirmation" value="false" />
+    <property name="settings.editor.selected.configurable" value="web-ide.project.structure" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RunManager">
@@ -56,28 +131,47 @@
       <updated>1605549174218</updated>
       <workItem from="1605549175233" duration="333000" />
       <workItem from="1605549527593" duration="5092000" />
+      <workItem from="1605691596321" duration="636000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
   <component name="WindowStateProjectService">
-    <state width="1295" height="362" key="GridCell.Tab.0.bottom" timestamp="1605552647377">
-      <screen x="0" y="0" width="2560" height="1040" />
+    <state width="1899" height="402" key="GridCell.Tab.0.bottom" timestamp="1605691968969">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
+    <state width="1899" height="402" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1605691968969" />
     <state width="1295" height="362" key="GridCell.Tab.0.bottom/0.0.2560.1040@0.0.2560.1040" timestamp="1605552647377" />
-    <state width="1295" height="362" key="GridCell.Tab.0.center" timestamp="1605552647377">
-      <screen x="0" y="0" width="2560" height="1040" />
+    <state width="1899" height="402" key="GridCell.Tab.0.center" timestamp="1605691968969">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
+    <state width="1899" height="402" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1605691968969" />
     <state width="1295" height="362" key="GridCell.Tab.0.center/0.0.2560.1040@0.0.2560.1040" timestamp="1605552647377" />
-    <state width="1295" height="362" key="GridCell.Tab.0.left" timestamp="1605552647377">
-      <screen x="0" y="0" width="2560" height="1040" />
+    <state width="1899" height="402" key="GridCell.Tab.0.left" timestamp="1605691968969">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
+    <state width="1899" height="402" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1605691968969" />
     <state width="1295" height="362" key="GridCell.Tab.0.left/0.0.2560.1040@0.0.2560.1040" timestamp="1605552647377" />
-    <state width="1295" height="362" key="GridCell.Tab.0.right" timestamp="1605552647377">
-      <screen x="0" y="0" width="2560" height="1040" />
+    <state width="1899" height="402" key="GridCell.Tab.0.right" timestamp="1605691968969">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
+    <state width="1899" height="402" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1605691968969" />
     <state width="1295" height="362" key="GridCell.Tab.0.right/0.0.2560.1040@0.0.2560.1040" timestamp="1605552647377" />
     <state width="1295" height="362" key="GridCell.Tab.1.bottom" timestamp="1605552647378">
       <screen x="0" y="0" width="2560" height="1040" />
@@ -127,6 +221,10 @@
       <screen x="0" y="0" width="2560" height="1040" />
     </state>
     <state width="1295" height="362" key="GridCell.Tab.3.right/0.0.2560.1040@0.0.2560.1040" timestamp="1605552647378" />
+    <state x="461" y="165" key="SettingsEditor" timestamp="1605692153909">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="461" y="165" key="SettingsEditor/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1605692153909" />
     <state x="212" y="252" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2" timestamp="1605552624399">
       <screen x="0" y="0" width="2560" height="1040" />
     </state>
