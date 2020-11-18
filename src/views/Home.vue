@@ -79,18 +79,36 @@
                         <h1 class="text-center titolo">la tua Pizza</h1>
                     </v-col>
                     <v-col cols="12" class="mx-auto pa-4 pa-lg-12 textFont ingredients">
-                        <v-btn class="mb-6 text-center mx-auto textFont" height="50px"
-                            color="#fee119" width="100%" style="border-radius:40px; font-weight:bold" tile
-                            @click='saveJPEG()'>
+                      <v-row class="ma-xs-2 ma-sm-4 mx-md-6 mx-lg-12 mx-xl-12">
+                        <v-col cols="12" sm="12" md="6" lg="6" xl="6">
+                          <v-btn class="mb-6 text-center mx-auto textFont" height="50px"
+                                 color="#fee119" min-width="200px" width="100%" style="border-radius:40px; font-weight:bold" tile
+                                 @click='saveJPEG()'>
                             Salva pizza
-                        </v-btn>
-                      <p v-if="basePizza" class="text-uppercase">Base: {{basePizza | underSpace}}</p>
-                        <span class="text-uppercase text-center" v-for="item in toppingList" :key="item">
-                            {{item | underSpace}} -
+                          </v-btn>
+                        </v-col>
+                        <v-col cols="12" sm="12" md="6" lg="6" xl="6">
+                          <v-btn class="mb-6 text-center mx-auto textFont" height="50px"
+                                 color="#fee119" min-width="200px" width="100%" style="border-radius:40px; font-weight:bold" tile
+                                 @click='createPizza()'>
+                            Rigenera
+                          </v-btn>
+                        </v-col>
+
+                      </v-row>
+
+                      <div class="text-left mx-auto resultcontainer">
+                        <p class="pizzatitle">BASE</p>
+                        <p v-if="basePizza" class="text-capitalize">{{basePizza | underSpace}}</p>
+                        <p class="pizzatitle pt-4">CONDIMENTO</p>
+                        <span class="text-capitalize text-center" v-for="item in toppingList" :key="item">
+                            {{item | underSpace}}
                         </span>
+                      </div>
+
                     </v-col>
                     <v-col class="pa-12 unclickable" cols="12">
-                        <canvas ref="can" width="500" height="500" style="margin: auto">
+                        <canvas ref="can" width="500" height="500" style="margin: auto;">
                         </canvas>
 
                     </v-col>
@@ -196,7 +214,7 @@
                     format: 'jpg',
                 });
                 const link = document.createElement('a');
-                link.download = 'canvas.png';
+                link.download = 'pizza'+ Date.now() +'.png';
                 link.href = dataURL;
                 document.body.appendChild(link);
                 link.click();
@@ -246,6 +264,10 @@
 
             createPizza() {
                 if (this.vegetables || this.meat || this.fish || this.latticini) {
+
+                  if (this.canvasRef && this.canvasInstance) {
+                    this.canvasInstance.clear()
+                  }
 
                     if (!this.canvasRef && !this.canvasInstance) {
                       this.canvasRef = this.$refs.can;
@@ -314,7 +336,7 @@
         },
         filters: {
           underSpace (text) {
-            return text.replace('_', ' ')
+            return text.replaceAll('_', ' ')
           }
         }
     }
@@ -398,5 +420,13 @@
         background-position: right;
         background-size: 100%;
         pointer-events: none
+    }
+
+    .resultcontainer {
+      width: fit-content;
+    }
+    .pizzatitle {
+      font-size: 18px;
+      margin-bottom: 0;
     }
 </style>
